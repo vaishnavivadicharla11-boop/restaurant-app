@@ -1,0 +1,203 @@
+.dish-card {
+  min-height: 135px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 100px 110px;
+  gap: 15px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+}
+
+.dish-details {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.dish-type {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dish-type span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.vegetarian {
+  border-color: #159447;
+}
+
+.vegetarian span {
+  background-color: #159447;
+}
+
+.non-vegetarian {
+  border-color: #ad2938;
+}
+
+.non-vegetarian span {
+  background-color: #ad2938;
+}
+
+.dish-information {
+  min-width: 0;
+}
+
+.dish-name {
+  margin: 0 0 5px;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #171717;
+}
+
+.dish-price {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.dish-description {
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.quantity-container {
+  width: 90px;
+  height: 30px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 18px;
+  background-color: #258a1c;
+  color: #ffffff;
+}
+
+.quantity-button {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.quantity-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity {
+  font-size: 13px;
+}
+
+.customization-text {
+  margin: 7px 0 0;
+  color: #5542d9;
+  font-size: 11px;
+}
+
+.not-available {
+  margin: 8px 0 0;
+  color: #ff3b30;
+  font-size: 12px;
+}
+
+.calories {
+  align-self: center;
+  margin: 0;
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dish-image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+  align-self: center;
+}
+
+@media screen and (max-width: 576px) {
+  .dish-card {
+    min-height: 140px;
+    grid-template-columns: minmax(0, 1fr) 45px 65px;
+    gap: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+  }
+
+  .dish-details {
+    gap: 5px;
+  }
+
+  .dish-type {
+    width: 19px;
+    height: 19px;
+  }
+
+  .dish-type span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dish-name {
+    font-size: 13px;
+  }
+
+  .dish-price {
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+
+  .dish-description {
+    font-size: 11px;
+  }
+
+  .quantity-container {
+    width: 79px;
+    height: 28px;
+  }
+
+  .quantity-button {
+    font-size: 16px;
+    padding: 0 6px;
+  }
+
+  .quantity {
+    font-size: 11px;
+  }
+
+  .customization-text {
+    font-size: 10px;
+    max-width: 100px;
+  }
+
+  .not-available {
+    font-size: 10px;
+  }
+
+  .calories {
+    font-size: 10px;
+  }
+
+  .dish-image {
+    width: 65px;
+    height: 65px;
+  }
+}

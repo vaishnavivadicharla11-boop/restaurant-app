@@ -1,0 +1,42 @@
+.category-container {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  overflow-x: auto;
+}
+
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-list {
+  display: flex;
+  min-width: max-content;
+}
+
+.category-button {
+  border: none;
+  background-color: transparent;
+  padding: 17px 25px 14px;
+  font-size: 13px;
+  color: #222222;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.category-button:hover {
+  background-color: #fafafa;
+}
+
+.active-category {
+  color: #e64b4b;
+  border-bottom-color: #e64b4b;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .category-button {
+    padding: 13px 20px 11px;
+    font-size: 11px;
+  }
+}
