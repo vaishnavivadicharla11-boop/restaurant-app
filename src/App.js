@@ -30,9 +30,7 @@ const App = () => {
         setRestaurant(restaurantData)
 
         if (restaurantData.table_menu_list.length > 0) {
-          setSelectedCategory(
-            restaurantData.table_menu_list[0].menu_category,
-          )
+          setSelectedCategory(restaurantData.table_menu_list[0].menu_category)
         }
       } catch (error) {
         setIsError(true)
@@ -81,7 +79,7 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div className="status-container">
+      <div className='status-container'>
         <p>Loading...</p>
       </div>
     )
@@ -89,14 +87,14 @@ const App = () => {
 
   if (isError) {
     return (
-      <div className="status-container">
+      <div className='status-container'>
         <p>Something went wrong. Please try again.</p>
       </div>
     )
   }
 
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <Header
         restaurantName={restaurant.restaurant_name}
         cartCount={getCartCount()}
@@ -108,7 +106,7 @@ const App = () => {
         setSelectedCategory={setSelectedCategory}
       />
 
-      <main className="menu-container">
+      <main className='menu-container'>
         {selectedMenu?.category_dishes.map(dish => (
           <DishItem
             key={dish.dish_id}

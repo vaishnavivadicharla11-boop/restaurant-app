@@ -13,9 +13,7 @@ const CategoryTabs = props => {
             <button
               type="button"
               key={category.menu_category_id}
-              className={`category-button ${
-                isActive ? 'active-category' : ''
-              }`}
+              className={`category-button ${isActive ? 'active-category' : ''}`}
               onClick={() => setSelectedCategory(category.menu_category)}
             >
               {category.menu_category}

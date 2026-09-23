@@ -62,9 +62,7 @@ const DishItem = props => {
               </div>
 
               {hasCustomizations && (
-                <p className="customization-text">
-                  Customizations available
-                </p>
+                <p className="customization-text">Customizations available</p>
               )}
             </>
           ) : (
@@ -75,11 +73,7 @@ const DishItem = props => {
 
       <p className="calories">{dish_calories} calories</p>
 
-      <img
-        className="dish-image"
-        src={dish_image}
-        alt={dish_name}
-      />
+      <img className="dish-image" src={dish_image} alt={dish_name} />
     </article>
   )
 }
